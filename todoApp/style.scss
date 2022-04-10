@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@mixin dfcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  & > .Input {
+    width: 850px;
+    margin: 0 auto;
+    & > .title-card {
+      text-align: center;
+      @include dfcc();
+      letter-spacing: 1px;
+      font-weight: 100;
+      font-size: 25px;
+
+      & > .icon {
+        & > .fa {
+          font-size: 35px;
+          color: rgb(242, 131, 13);
+          margin-right: 15px;
+        }
+      }
+
+      & > h1 {
+        font-weight: 100;
+        & > b {
+          font-weight: 300;
+          color: rgb(242, 131, 13);
+        }
+      }
+    }
+
+    & > .inp-form {
+      font-size: 19px;
+      margin-top: 20px;
+      & > label {
+        color: rgb(95, 95, 95);
+        font-size: 22px;
+        margin-top: -5px;
+        &:hover,&:focus {
+          color: rgb(242, 131, 13);
+        }
+        & > input {
+          width: 100%;
+          height: 40px;
+          border-radius: 3px;
+          margin-top: 3px;
+          outline: none;
+          border: 2px solid rgb(210, 209, 209);
+          transition: all .5s ease-in-out;
+          cursor: pointer;
+          padding: 5px;
+          font-size: 18px;
+          color: rgb(242, 131, 13);
+
+          &:hover,&:focus {
+            border: 2px solid rgb(242, 131, 13);
+            color: rgb(242, 131, 13);
+            box-shadow: 0 0 5px;
+          }
+          
+          &:hover:focus {
+            border: 2px solid rgb(242, 131, 13);
+            color: rgb(242, 131, 13);
+            box-shadow: 0 0 5px;
+          }
+
+        }
+      }
+
+      & > input {
+        width: 100%;
+        background-color: rgb(242, 131, 13);
+        border: none;
+        outline: none;
+        height: 40px;
+        border-radius: 3px;
+        margin-top: 25px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        color: #fff;
+        transition: all .5s ease-in-out;
+        &:hover {
+          border: 2px solid rgb(242, 131, 13);
+        }
+      }
+    }
+
+    & > .Window {
+      @include dfcc();
+      flex-direction: column;
+      justify-content: space-evenly;
+      border: none;
+      border-top: 1px solid rgb(179, 179, 179);
+      border-bottom: 1px solid rgb(179, 179, 179);
+      margin-top: 50px;
+      margin-bottom: 20px;
+      transition: all .5s ease-in-out;
+      padding: 10px;
+      height: auto;
+
+      &:hover,&:focus {
+        cursor: pointer;
+        border-top: 2px solid rgb(242, 131, 13);
+        border-bottom: 2px solid rgb(242, 131, 13);
+      }
+      & > thead {
+        width: 100%;
+        height: 50px;
+        margin: 10px 0;
+        background: #eee;
+        color: rgb(126, 126, 126);
+
+        & > tr {
+          @include dfcc();
+          justify-content: space-evenly;
+          height: 100%;
+          font-size: 19px;
+          border-radius: 3px;
+          letter-spacing: 1.5px;
+          background: #bbb;
+          color: #fff;
+          transition: all .5s ease-in-out;
+          &:hover {
+            background-color: rgb(242, 131, 13);
+          }
+          & > th {
+            width: 100%;
+
+          }
+        }
+      }
+
+      & > tbody {
+        width: 100%;
+        height: 50px;
+        margin: 10px 0;
+        background: #eee;
+        color: rgb(126, 126, 126);
+        background: none;
+
+
+        & > tr {
+          height: 100%;
+          width: 100%;
+          font-size: 19px;
+          border-radius: 3px;
+          letter-spacing: 1.5px;
+          height: 50px;
+          margin-top: 10px;
+          background: #eee;
+          transition: all .5s ease-in-out;
+          position: relative;
+          display: flex;
+          align-items: center;
+          & > input {
+            background: none;
+            border: none;
+            outline: none;
+            color: #bbb;
+            text-align: center;
+            width: 120px;
+            height: 40px;
+            margin: 0 45px;
+            font-size: 18px;
+            &:hover,&:active,&:focus {
+              box-shadow: 0 0 15px;
+              color: #fff;
+              border-radius: 5px;
+            }
+          }
+
+          & > div {
+            position: absolute;
+            font-size: 18px;
+            display: none;
+          }
+
+          & > .edit111 {
+            left: 170px;
+          }
+
+          & > .edit222 {
+            left: 380px;
+          }
+
+          & > .edit333 {
+            left: 590px;
+          }
+
+          & > .edit444 {
+            left: 650px;
+          }
+
+
+
+          &:hover td {
+            color: #0ff;
+          }
+          & > th {
+            width: 100%;
+            font-weight: 100;
+            overflow: hidden;
+            &:last-child {
+              position: absolute;
+              width: 100px;
+              width: auto;
+              right: 0;
+
+              & > .fa-bars {
+                display: none;
+                margin: 4px;
+              }
+
+              & > .fa {
+                display: none;
+                margin: 4px;
+                color: #0ff;
+              }
+
+             
+
+
+            }
+          }
+          &:hover  {
+            & > th:last-child {
+              transition: .5s ease-in-out;
+              @include dfcc();
+              flex-direction: column;
+              border-radius: 5px;
+                padding: 4px 8px;
+                top: 5px;
+                background: #F2830D;
+                box-shadow: 0 0 10px;
+                z-index: 2;
+              &:hover {
+                padding: 4px 8px;
+                top: 5px;
+                background: #F2830D;
+                box-shadow: 0 0 10px;
+                z-index: 2;
+              }
+              & > .fa {
+                display: inline;
+                color: #0ff;
+                margin-right: 5px;
+                transition: .5s ease-in-out;
+                &:hover {
+                  padding: 4px 8px;
+                  background: #F2830D;
+                  box-shadow: 0 0 10px;
+                  z-index: 2;
+                }
+              }
+
+
+            }
+
+            & > input {
+              color: #fff;
+            }
+
+            & > div {
+              display: inline;
+            }
+          }
+
+          & > td {
+            font-weight: bolder;
+            position: absolute; 
+            left: 5px;           
+          }
+        }
+
+         tr {
+          &:hover {
+            background: #f2830d;
+            color: #fff;
+          }
+
+        }
+      }
+    }
+  }
+}

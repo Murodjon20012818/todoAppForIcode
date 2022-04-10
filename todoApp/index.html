@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class='Input'>
+    <div class="title-card">
+      <div class="icon">
+        <i id="bar" class="fa fa-book"></i>
+      </div>
+      <h1>Y.S <b>Product</b>List</h1>
+    </div>
+  
+    <form class="inp-form">
+
+      <label>
+        Title <br>
+        <input type="text" class="title" id='title'   /> 
+      </label><br><br>
+      <label>
+        Cost <br>
+        <input type="text" class="title" id='cost'    /> 
+      </label>
+      <label><br><br>
+        Weight <br>
+        <input type="text" class="title" id='weight'  /> 
+      </label>
+      <label><br><br>
+        Storange <br>
+        <input type="text" class="title" id='storange'  /> 
+      </label>
+  
+      <input  type="button" id='btn' value="Add Product">
+    </form>
+    
+    <table class='Window' id='window'>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Cost</th>
+          <th>Weight</th>
+          <th>Storange</th>
+        </tr>
+      </thead>
+      <input type="search" style="display: none; margin: 0 auto; width: 90%; height: 40px; border-radius: 5px; border: none; outline: none; background: #f2830d; margin-top: 15px; margin-left: 50px; padding: 0 15px; color: #fff; font-size: 18px;  " id="search-input" placeholder="Search..." class="izlash" >
+      
+      <tbody style="  height: auto;" id="BookList"></tbody>
+    </table>
+  </div>
+  <script src="jquery.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

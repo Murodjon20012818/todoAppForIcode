@@ -1,0 +1,346 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body > .Input {
+  width: 850px;
+  margin: 0 auto;
+}
+
+body > .Input > .title-card {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+body > .Input > .title-card > .icon > .fa {
+  font-size: 35px;
+  color: #f2830d;
+  margin-right: 15px;
+}
+
+body > .Input > .title-card > h1 {
+  font-weight: 100;
+}
+
+body > .Input > .title-card > h1 > b {
+  font-weight: 300;
+  color: #f2830d;
+}
+
+body > .Input > .inp-form {
+  font-size: 19px;
+  margin-top: 20px;
+}
+
+body > .Input > .inp-form > label {
+  color: #5f5f5f;
+  font-size: 22px;
+  margin-top: -5px;
+}
+
+body > .Input > .inp-form > label:hover, body > .Input > .inp-form > label:focus {
+  color: #f2830d;
+}
+
+body > .Input > .inp-form > label > input {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  margin-top: 3px;
+  outline: none;
+  border: 2px solid #d2d1d1;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px;
+  color: #f2830d;
+}
+
+body > .Input > .inp-form > label > input:hover, body > .Input > .inp-form > label > input:focus {
+  border: 2px solid #f2830d;
+  color: #f2830d;
+  -webkit-box-shadow: 0 0 5px;
+          box-shadow: 0 0 5px;
+}
+
+body > .Input > .inp-form > label > input:hover:focus {
+  border: 2px solid #f2830d;
+  color: #f2830d;
+  -webkit-box-shadow: 0 0 5px;
+          box-shadow: 0 0 5px;
+}
+
+body > .Input > .inp-form > input {
+  width: 100%;
+  background-color: #f2830d;
+  border: none;
+  outline: none;
+  height: 40px;
+  border-radius: 3px;
+  margin-top: 25px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: #fff;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+body > .Input > .inp-form > input:hover {
+  border: 2px solid #f2830d;
+}
+
+body > .Input > .Window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: none;
+  border-top: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  padding: 10px;
+  height: auto;
+}
+
+body > .Input > .Window:hover, body > .Input > .Window:focus {
+  cursor: pointer;
+  border-top: 2px solid #f2830d;
+  border-bottom: 2px solid #f2830d;
+}
+
+body > .Input > .Window > thead {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  background: #eee;
+  color: #7e7e7e;
+}
+
+body > .Input > .Window > thead > tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+  font-size: 19px;
+  border-radius: 3px;
+  letter-spacing: 1.5px;
+  background: #bbb;
+  color: #fff;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+body > .Input > .Window > thead > tr:hover {
+  background-color: #f2830d;
+}
+
+body > .Input > .Window > thead > tr > th {
+  width: 100%;
+}
+
+body > .Input > .Window > tbody {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  background: #eee;
+  color: #7e7e7e;
+  background: none;
+}
+
+body > .Input > .Window > tbody > tr {
+  height: 100%;
+  width: 100%;
+  font-size: 19px;
+  border-radius: 3px;
+  letter-spacing: 1.5px;
+  height: 50px;
+  margin-top: 10px;
+  background: #eee;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body > .Input > .Window > tbody > tr > input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #bbb;
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  margin: 0 45px;
+  font-size: 18px;
+}
+
+body > .Input > .Window > tbody > tr > input:hover, body > .Input > .Window > tbody > tr > input:active, body > .Input > .Window > tbody > tr > input:focus {
+  -webkit-box-shadow: 0 0 15px;
+          box-shadow: 0 0 15px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+body > .Input > .Window > tbody > tr > div {
+  position: absolute;
+  font-size: 18px;
+  display: none;
+}
+
+body > .Input > .Window > tbody > tr > .edit111 {
+  left: 170px;
+}
+
+body > .Input > .Window > tbody > tr > .edit222 {
+  left: 380px;
+}
+
+body > .Input > .Window > tbody > tr > .edit333 {
+  left: 590px;
+}
+
+body > .Input > .Window > tbody > tr > .edit444 {
+  left: 650px;
+}
+
+body > .Input > .Window > tbody > tr:hover td {
+  color: #0ff;
+}
+
+body > .Input > .Window > tbody > tr > th {
+  width: 100%;
+  font-weight: 100;
+  overflow: hidden;
+}
+
+body > .Input > .Window > tbody > tr > th:last-child {
+  position: absolute;
+  width: 100px;
+  width: auto;
+  right: 0;
+}
+
+body > .Input > .Window > tbody > tr > th:last-child > .fa-bars {
+  display: none;
+  margin: 4px;
+}
+
+body > .Input > .Window > tbody > tr > th:last-child > .fa {
+  display: none;
+  margin: 4px;
+  color: #0ff;
+}
+
+body > .Input > .Window > tbody > tr:hover > th:last-child {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  padding: 4px 8px;
+  top: 5px;
+  background: #F2830D;
+  -webkit-box-shadow: 0 0 10px;
+          box-shadow: 0 0 10px;
+  z-index: 2;
+}
+
+body > .Input > .Window > tbody > tr:hover > th:last-child:hover {
+  padding: 4px 8px;
+  top: 5px;
+  background: #F2830D;
+  -webkit-box-shadow: 0 0 10px;
+          box-shadow: 0 0 10px;
+  z-index: 2;
+}
+
+body > .Input > .Window > tbody > tr:hover > th:last-child > .fa {
+  display: inline;
+  color: #0ff;
+  margin-right: 5px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+body > .Input > .Window > tbody > tr:hover > th:last-child > .fa:hover {
+  padding: 4px 8px;
+  background: #F2830D;
+  -webkit-box-shadow: 0 0 10px;
+          box-shadow: 0 0 10px;
+  z-index: 2;
+}
+
+body > .Input > .Window > tbody > tr:hover > input {
+  color: #fff;
+}
+
+body > .Input > .Window > tbody > tr:hover > div {
+  display: inline;
+}
+
+body > .Input > .Window > tbody > tr > td {
+  font-weight: bolder;
+  position: absolute;
+  left: 5px;
+}
+
+body > .Input > .Window > tbody tr:hover {
+  background: #f2830d;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
